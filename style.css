@@ -434,6 +434,7 @@ th {
     border: 1px solid black;
     width: 600px;
     margin:0 auto;
+    margin-bottom: 5px;
 }
 
 .subjecttype h2, input[type="text"] {
@@ -467,6 +468,7 @@ img[title="Add subject"] {
     position: relative;
     float: right;
     bottom: 54px;
+    cursor: pointer;
 }
 
 img {
@@ -489,9 +491,17 @@ img:hover {
 }
 
 .strike {
-    text-decoration: line-through
+    text-decoration: line-through;
+}
+
+.hide {
+    display: none;
 }
 
 a {
     text-decoration: none;
+}
+
+li {
+    cursor: pointer;
 }
