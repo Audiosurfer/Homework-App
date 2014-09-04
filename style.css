@@ -504,4 +504,6 @@ a {
 
 li {
     cursor: pointer;
+    width: 550px;
+    word-wrap: break-word;
 }
