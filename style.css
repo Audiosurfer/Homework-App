@@ -456,6 +456,16 @@ button {
     padding: 1px 15px;
 }
 
+.deletebutton {
+    background: white;
+    border: 1px solid #a7a2a2;
+    padding: 1px 15px;
+}
+
+.deletebutton:hover {
+    border: 2px solid #a7a2a2;
+}
+
 button:hover {
     border-color: grey;
 }
@@ -487,7 +497,7 @@ img:hover {
 
 #credits {
     text-align: center;
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .strike {
@@ -506,4 +516,15 @@ li {
     cursor: pointer;
     width: 550px;
     word-wrap: break-word;
+}
+
+.subjecttype .deletebutton {
+    position: relative;
+    top: -55px;
+    left: 540px;
+}
+
+.subjectheader {
+    width: 600px;
+    height: 55px;
 }

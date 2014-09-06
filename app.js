@@ -15,9 +15,12 @@ $(document).ready(function() {
     $('body').on('dblclick', 'li', function() {
         $(this).addClass('hide');
     })
+     $('body').on('click','.deletebutton', function() {
+        $(this).parent().parent().addClass('hide');
+    })
       $('img').click(function() {
         var classname = prompt("What subject is this for?");
-        var subject = "<div class='subjecttype'><h2>Subject - " + classname + "</h2><input type='text' name='assignment' placeholder=' Add assignment'/><button>Add</button><ol></ol></div>";
+        var subject = "<div class='subjecttype'><div class='subjectheader'><h2>Subject - " + classname + "</h2><button class='deletebutton' title='Delete subject'>X</button></div><input type='text' name='assignment' placeholder=' Add assignment'/><button title='Add assignment'>Add</button><ol></ol></div>"
         $('header').after(subject);
     })
 });
