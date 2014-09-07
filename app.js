@@ -16,7 +16,10 @@ $(document).ready(function() {
         $(this).addClass('hide');
     })
      $('body').on('click','.deletebutton', function() {
-        $(this).parent().parent().addClass('hide');
+        var confirmClose = confirm("Are you sure you would like to delete this subject?");
+        if (confirmClose === true) {
+            $(this).parent().parent().addClass('hide');
+        }
     })
       $('img').click(function() {
         var classname = prompt("What subject is this for?");
